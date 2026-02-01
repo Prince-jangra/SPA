@@ -1,0 +1,44 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Bright, optimistic city gradient – no dark mode */
+  background:
+    radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.25), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(244, 114, 182, 0.2), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(52, 211, 153, 0.2), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(250, 204, 21, 0.18), transparent 55%),
+    #fafbfc;
+  background-size: 140% 140%;
+  background-attachment: fixed;
+}
+
+.topbar-shell {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(18px);
+}
+
+.dashboard-main {
+  padding: 64px 48px 40px;
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-main {
+    padding: 52px 36px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-main {
+    padding: 40px 24px 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 32px 16px 32px;
+  }
+}

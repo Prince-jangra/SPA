@@ -1,0 +1,20 @@
+Screenshots for Urbanova Smart City Citizen Portal
+
+This folder contains UI screenshots for the project documentation.
+
+Required Screenshots:
+1. login.png - Login page interface
+2. dashboard.png - Main dashboard with metrics and charts
+3. sidebar.png - Sidebar navigation panel
+4. settings.png - Profile & Settings page
+
+To add your screenshots:
+1. Save your login page screenshot as: login.png
+2. Save your dashboard screenshot as: dashboard.png
+3. Save your sidebar screenshot as: sidebar.png
+4. Save your settings screenshot as: settings.png
+
+Then commit and push:
+git add public/screenshots/*.png
+git commit -m "Add UI screenshots"
+git push origin main
