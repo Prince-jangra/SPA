@@ -1,0 +1,53 @@
+
+
+.header h1 {
+  cursor: pointer;
+}
+
+.header button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container {
+  padding: 40px;
+}
+
+.card {
+  max-width: 700px;
+  background: #f9fafb;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* Header stays same */
+.header {
+  background: #0f766e;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* THIS IS THE KEY PART */
+.container {
+  height: calc(100vh - 90px);
+  /* subtract header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6fb;
+}
+
+/* Card styling */
+.card {
+  width: 600px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
