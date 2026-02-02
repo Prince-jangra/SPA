@@ -67,3 +67,4 @@ Each component is mapped to a route.
 UI resembles a real multi-page website.
 
 🖼️ Screenshot
+![alt text](MYPIC.jpeg)
