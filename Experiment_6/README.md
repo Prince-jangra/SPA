@@ -1,20 +1,165 @@
-# React + Vite
+# ✨ Experiment 6 - React + Vite Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, performant Single Page Application built with React and Vite
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite)
+![Node](https://img.shields.io/badge/Node-v16+-339933?style=flat-square&logo=node.js)
+![License](https://img.shields.io/badge/License-Open-green?style=flat-square)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ⚡ **Lightning Fast** - Vite provides instant server start and fast HMR (Hot Module Replacement)
+- 🎯 **React 18+** - Latest React features and hooks for modern development
+- 🔧 **Optimized Build** - Production-ready build optimization and code splitting
+- 📦 **ESLint Ready** - Code quality checks and best practices enforcement
+- 🎨 **Modern UI** - Clean and responsive interface with CSS3 styling
+- 🔄 **HMR Support** - Instantly see changes during development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### Dashboard View
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Screenshot 1](./Screenshot%202026-02-23%20152148.png)
+_Main application interface showcasing the UI and functionality_
 
-## Screenshots
+### Interface Overview
 
-![Screenshot](./Screenshot%202026-02-23%20152148.png)
+![Screenshot 2](./Screenshot%202026-02-27%20160000.png)
+_Additional application view demonstrating key features_
+
+## 💻 Tech Stack
+
+| Technology    | Purpose                     |
+| ------------- | --------------------------- |
+| **React 18+** | Frontend framework          |
+| **Vite**      | Build tool & dev server     |
+| **CSS3**      | Styling & responsive design |
+| **Node.js**   | Runtime environment         |
+| **npm**       | Package management          |
+| **ESLint**    | Code quality & standards    |
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm (v7+) or yarn
+
+### Installation
+
+1. **Clone the repository**
+
+```bash
+git clone <repository-url>
+cd Experiment_6
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Start development server**
+
+```bash
+npm run dev
+```
+
+The application will open at `http://localhost:5173`
+
+4. **Build for production**
+
+```bash
+npm run build
+```
+
+## 📋 Project Structure
+
+```
+Experiment_6/
+├── public/                  # Static assets
+├── src/
+│   ├── App.jsx             # Main application component
+│   ├── App.css             # Application styling
+│   ├── main.jsx            # Application entry point
+│   ├── index.css           # Global styles
+│   └── assets/             # Images and static resources
+├── index.html              # HTML template
+├── package.json            # Project dependencies
+├── vite.config.js          # Vite configuration
+├── eslint.config.js        # ESLint rules
+└── README.md               # This file
+```
+
+## ⚙️ Development
+
+### Available Scripts
+
+| Command           | Description                       |
+| ----------------- | --------------------------------- |
+| `npm run dev`     | Start development server with HMR |
+| `npm run build`   | Create optimized production build |
+| `npm run preview` | Preview production build locally  |
+| `npm run lint`    | Run ESLint to check code quality  |
+
+### Hot Module Replacement (HMR)
+
+The development server supports HMR, allowing you to see changes instantly without full page reload. Edit any file in `src/` and your changes will appear immediately in the browser.
+
+## 🔌 Build Tools & Plugins
+
+### Official Vite Plugins
+
+- **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react)** - Uses Babel for Fast Refresh
+  - Provides optimal development experience
+  - Fast HMR for React components
+
+- **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)** - Uses SWC for optimal performance
+  - Faster compilation
+  - Better build performance
+
+### Configuration Files
+
+- `vite.config.js` - Vite build configuration
+- `eslint.config.js` - Code quality rules
+- `package.json` - Project metadata and dependencies
+
+## 📚 Best Practices
+
+For production applications, we recommend:
+
+✅ Use **TypeScript** for type safety and better IDE support  
+✅ Implement **type-aware ESLint rules**  
+✅ Follow **React best practices** for component design  
+✅ Optimize **bundle size** with code splitting  
+✅ Use **CSS modules** for scoped styling  
+✅ Implement **Error boundaries** for error handling  
+✅ Monitor **performance metrics** with React DevTools
+
+## 📖 Resources
+
+- [React Documentation](https://react.dev) - Official React docs
+- [Vite Documentation](https://vitejs.dev) - Build tool guide
+- [ESLint Configuration](https://eslint.org/docs/latest/use/configure) - Code quality rules
+- [Babel](https://babeljs.io/) - JavaScript compiler
+- [React DevTools](https://react-devtools-tutorial.vercel.app/) - Debugging tools
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit pull requests.
+
+## 📄 License
+
+This project is part of the SPA (Single Page Application) course series.
+
+---
+
+<div align="center">
+
+**Created:** February 2026 | **Status:** ✅ Active Development
+
+_Built with ❤️ for learning and development_
+
+</div>

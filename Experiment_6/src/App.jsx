@@ -97,34 +97,15 @@ sx={{height:8,borderRadius:5}}
 <div className="row g-3">
 
 <div className="col-md-6">
-<TextField
-fullWidth
-label="Full Name"
-name="name"
-value={form.name}
-onChange={handleChange}
-/>
+<TextField fullWidth label="Full Name" name="name" value={form.name} onChange={handleChange}/>
 </div>
 
 <div className="col-md-6">
-<TextField
-fullWidth
-label="Email"
-name="email"
-value={form.email}
-onChange={handleChange}
-/>
+<TextField fullWidth label="Email" name="email" value={form.email} onChange={handleChange}/>
 </div>
 
 <div className="col-md-6">
-<TextField
-select
-fullWidth
-label="Role"
-name="role"
-value={form.role}
-onChange={handleChange}
->
+<TextField select fullWidth label="Role" name="role" value={form.role} onChange={handleChange}>
 <MenuItem value="Developer">Developer</MenuItem>
 <MenuItem value="Designer">Designer</MenuItem>
 <MenuItem value="Student">Student</MenuItem>
@@ -132,14 +113,7 @@ onChange={handleChange}
 </div>
 
 <div className="col-md-6">
-<TextField
-select
-fullWidth
-label="Experience"
-name="experience"
-value={form.experience}
-onChange={handleChange}
->
+<TextField select fullWidth label="Experience" name="experience" value={form.experience} onChange={handleChange}>
 <MenuItem value="0-1 years">0-1 years</MenuItem>
 <MenuItem value="1-3 years">1-3 years</MenuItem>
 <MenuItem value="3+ years">3+ years</MenuItem>
@@ -152,45 +126,13 @@ onChange={handleChange}
 <Typography variant="subtitle1" fontWeight="medium">
 Topics to focus on
 </Typography>
-<FormControlLabel
-control={
-<Checkbox
-checked={form.topics.includes("Hooks")}
-onChange={()=>handleTopics("Hooks")}
-/>
-}
-label="Hooks"
-/>
-<FormControlLabel
-control={
-<Checkbox
-checked={form.topics.includes("Routing")}
-onChange={()=>handleTopics("Routing")}
-/>
-}
-label="Routing"
-/>
-<FormControlLabel
-control={
-<Checkbox
-checked={form.topics.includes("Testing")}
-onChange={()=>handleTopics("Testing")}
-/>
-}
-label="Testing"
-/>
+<FormControlLabel control={<Checkbox checked={form.topics.includes("Hooks")} onChange={()=>handleTopics("Hooks")}/>} label="Hooks"/>
+<FormControlLabel control={<Checkbox checked={form.topics.includes("Routing")} onChange={()=>handleTopics("Routing")}/>} label="Routing"/>
+<FormControlLabel control={<Checkbox checked={form.topics.includes("Testing")} onChange={()=>handleTopics("Testing")}/>} label="Testing"/>
 </Box>
 
 <Box mt={3}>
-<TextField
-fullWidth
-multiline
-rows={3}
-label="Goals"
-name="goals"
-value={form.goals}
-onChange={handleChange}
-/>
+<TextField fullWidth multiline rows={3} label="Goals" name="goals" value={form.goals} onChange={handleChange}/>
 </Box>
 
 <Box mt={4} textAlign="center">
@@ -211,24 +153,34 @@ Save Preferences
 
 </form>
 
-<Box mt={4} p={2} bgcolor="#f5f5f5" borderRadius={3}>
-<Typography variant="subtitle1" fontWeight="bold">
+{/* ✅ SIMPLE CLEAN LIVE PREVIEW */}
+
+<Box mt={4} p={3} bgcolor="#f8f9fa" borderRadius={3}>
+<Typography variant="h6" fontWeight="bold" gutterBottom>
 Live Preview
 </Typography>
-<pre style={{fontSize:"13px"}}>
-{JSON.stringify(form,null,2)}
-</pre>
+
+<Typography><strong>Name:</strong> {form.name || "—"}</Typography>
+<Typography><strong>Email:</strong> {form.email || "—"}</Typography>
+<Typography><strong>Role:</strong> {form.role || "—"}</Typography>
+<Typography><strong>Experience:</strong> {form.experience || "—"}</Typography>
+
+<Typography>
+<strong>Topics:</strong>{" "}
+{form.topics.length>0 ? form.topics.join(", ") : "—"}
+</Typography>
+
+<Typography mt={1}>
+<strong>Goals:</strong><br/>
+{form.goals || "—"}
+</Typography>
 </Box>
 
 </CardContent>
 </Card>
 </Container>
 
-<Snackbar
-open={open}
-autoHideDuration={3000}
-onClose={()=>setOpen(false)}
->
+<Snackbar open={open} autoHideDuration={3000} onClose={()=>setOpen(false)}>
 <Alert severity="success" variant="filled">
 Preferences saved successfully 🚀
 </Alert>
