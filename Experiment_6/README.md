@@ -20,12 +20,12 @@
 
 ### Dashboard View
 
-![Screenshot 1](./Screenshot%202026-02-23%20152148.png)
-_Main application interface showcasing the UI and functionality_
+![Screenshot 1](https://github.com/Prince-jangra/SPA/blob/6fd19ced35b3963601991312151bd6de90a8f851/Experiment_6/Screenshot%202026-02-27%20141846.png)
+\_Main application interface showcasing the UI and functionality\*
 
 ### Interface Overview
 
-![Screenshot 2](./Screenshot%202026-02-27%20160000.png)
+![Screenshot 2](https://github.com/Prince-jangra/SPA/blob/main/Experiment_6/Screenshot%202026-02-27%20141910.png)
 _Additional application view demonstrating key features_
 
 ## 💻 Tech Stack
